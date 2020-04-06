@@ -1,7 +1,7 @@
 class Movie < ActiveRecord::Base
 
   def can_be_instantiated_and_then_saved
-    new_movie = Movie.new
+    new_movie = Movie.new(title: "This is a title.")
     new_movie.save
   end
 
